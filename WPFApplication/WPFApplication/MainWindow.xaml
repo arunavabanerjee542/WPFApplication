@@ -1,0 +1,20 @@
+﻿<Window x:Class="WPFApplication.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPFApplication"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Canvas>
+            <TextBox Text="{Binding Persons.Fname}" Height="100" Width="200" Canvas.Left="264"/>
+            <TextBox Text="{Binding Persons.Sname}" Height="100" Width="200" Canvas.Left="264" Canvas.Top="118"/>
+            <TextBox Text="{Binding FullName}" Height="100" Width="200" Canvas.Left="264" Canvas.Top="259"/>
+            <Button Content="SUBMIT" Command="{Binding MyCommand}"  Canvas.Left="149" Canvas.Top="284"/>
+
+        </Canvas>
+
+
+    </Grid>
+</Window>
